@@ -11,4 +11,4 @@ Static landing page for BackLight, intended for GitHub Pages deployment.
 ## Files
 
 - `index.html`: Single-page marketing site.
-- `styles.css`: Landing page styling.
+- `styles.css`: Dark-mode landing page styling and hero animations.
