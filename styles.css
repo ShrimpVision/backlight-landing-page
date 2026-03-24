@@ -153,30 +153,36 @@ h1 {
 .preview__frame {
   position: relative;
   width: min(100%, 35rem);
-  padding: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.46);
-  border-radius: 2rem;
-  background: var(--surface);
-  backdrop-filter: blur(16px);
-  box-shadow: var(--shadow);
+  padding: 0;
+  border: 0;
+  border-radius: 1.5rem;
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
 }
 
 .preview__image {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 1.35rem;
+  border-radius: 1.5rem;
 }
 
 .preview__caption {
   position: absolute;
   left: 1.4rem;
-  top: 1rem;
   right: 1.4rem;
+  bottom: 1.2rem;
+  top: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  padding: 0.95rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1rem;
+  background: rgba(8, 8, 10, 0.38);
+  backdrop-filter: blur(12px);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.08em;
