@@ -150,21 +150,6 @@ h1 {
   animation: fadeRise 850ms ease 320ms forwards;
 }
 
-.download-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.download-group__icon {
-  width: 3.5rem;
-  height: 3.5rem;
-  display: block;
-  flex: 0 0 auto;
-  border-radius: 1rem;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
-}
-
 .button {
   display: inline-flex;
   align-items: center;
@@ -250,8 +235,18 @@ h1 {
 .footer {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
   padding: 0 1.5rem 2rem;
-  text-align: center;
+}
+
+.footer__icon {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 0.9rem;
 }
 
 .footer p {
