@@ -75,32 +75,6 @@ body {
   max-width: 42rem;
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 1.2rem;
-  opacity: 0;
-  transform: translateY(14px);
-  animation: fadeRise 720ms ease forwards;
-}
-
-.brand__icon {
-  width: 3.5rem;
-  height: 3.5rem;
-  display: block;
-  border-radius: 1.1rem;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
-}
-
-.brand__name {
-  font-size: 1rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: rgba(244, 239, 232, 0.9);
-}
-
 .eyebrow {
   margin: 0 0 1rem;
   font-size: 0.8rem;
@@ -174,6 +148,21 @@ h1 {
   opacity: 0;
   transform: translateY(18px);
   animation: fadeRise 850ms ease 320ms forwards;
+}
+
+.download-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.download-group__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: block;
+  flex: 0 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
 }
 
 .button {
@@ -326,7 +315,6 @@ h1 {
 
 @media (prefers-reduced-motion: reduce) {
   .page-glow,
-  .brand,
   .eyebrow,
   h1,
   .lede,
