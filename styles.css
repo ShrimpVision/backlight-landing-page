@@ -208,7 +208,7 @@ h1 {
 
 .preview--mobile {
   display: none;
-  margin-top: 2rem;
+  margin-top: 2.75rem;
 }
 
 .preview__frame {
@@ -318,6 +318,7 @@ h1 {
 
   .preview--mobile {
     display: flex;
+    margin-bottom: 0.5rem;
   }
 
   .preview__frame {
