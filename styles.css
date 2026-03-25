@@ -232,6 +232,56 @@ h1 {
   border-radius: 1.5rem;
 }
 
+.demo {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  padding: 0 clamp(1.25rem, 4vw, 4rem) 4rem;
+}
+
+.demo__content {
+  max-width: 30rem;
+}
+
+.demo__eyebrow {
+  margin: 0 0 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d2cdc4;
+}
+
+.demo h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.demo__text {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.demo__video-wrap {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: rgba(10, 12, 17, 0.88);
+}
+
+.demo__video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .footer {
   position: relative;
   z-index: 1;
@@ -349,5 +399,10 @@ h1 {
   .preview__frame {
     transform: none;
     animation: fadeRise 900ms ease 180ms forwards;
+  }
+
+  .demo {
+    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
   }
 }
