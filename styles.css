@@ -307,6 +307,78 @@ h1 {
   text-transform: uppercase;
 }
 
+.footer__link {
+  color: rgba(244, 239, 232, 0.78);
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 180ms ease;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+.policy {
+  position: relative;
+  z-index: 1;
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+
+.policy__back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: rgba(244, 239, 232, 0.78);
+  text-decoration: none;
+}
+
+.policy__eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d2cdc4;
+}
+
+.policy h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+.policy__updated {
+  margin: 1rem 0 0;
+  color: var(--muted);
+}
+
+.policy__section {
+  margin-top: 2rem;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, rgba(19, 22, 29, 0.82) 0%, rgba(10, 12, 17, 0.9) 100%);
+}
+
+.policy__section h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1.1rem;
+  letter-spacing: -0.03em;
+}
+
+.policy__section p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .note--one {
   animation-delay: 460ms;
 }
@@ -404,5 +476,9 @@ h1 {
   .demo {
     grid-template-columns: 1fr;
     padding-bottom: 3rem;
+  }
+
+  .footer {
+    flex-wrap: wrap;
   }
 }
