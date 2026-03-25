@@ -206,6 +206,11 @@ h1 {
   justify-content: center;
 }
 
+.preview--mobile {
+  display: none;
+  margin-top: 2rem;
+}
+
 .preview__frame {
   position: relative;
   width: min(100%, 35rem);
@@ -305,6 +310,14 @@ h1 {
 
   .notes {
     grid-template-columns: 1fr;
+  }
+
+  .preview--desktop {
+    display: none;
+  }
+
+  .preview--mobile {
+    display: flex;
   }
 
   .preview__frame {
