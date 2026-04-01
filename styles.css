@@ -282,6 +282,84 @@ h1 {
   height: auto;
 }
 
+.comparison {
+  position: relative;
+  z-index: 1;
+  padding: 0 clamp(1.25rem, 4vw, 4rem) 4rem;
+}
+
+.comparison__content {
+  max-width: 42rem;
+  margin-bottom: 2rem;
+}
+
+.comparison__eyebrow {
+  margin: 0 0 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d2cdc4;
+}
+
+.comparison h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.comparison__text {
+  max-width: 38rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.comparison__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.comparison__card {
+  margin: 0;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: rgba(10, 12, 17, 0.88);
+  box-shadow: var(--shadow);
+}
+
+.comparison__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.comparison__card figcaption {
+  padding: 1rem 1.15rem 1.1rem;
+  color: rgba(244, 239, 232, 0.82);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.comparison__video-wrap {
+  margin-top: 1.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: rgba(10, 12, 17, 0.88);
+}
+
+.comparison__video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .footer {
   position: relative;
   z-index: 1;
@@ -476,6 +554,14 @@ h1 {
   .demo {
     grid-template-columns: 1fr;
     padding-bottom: 3rem;
+  }
+
+  .comparison {
+    padding-bottom: 3rem;
+  }
+
+  .comparison__grid {
+    grid-template-columns: 1fr;
   }
 
   .footer {
